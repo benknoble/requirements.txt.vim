@@ -24,9 +24,26 @@
 " OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 " SOFTWARE.
 
-let s:save_cpo = &cpo
-set cpo&vim
+let g:requirements#detect_filename_pattern =
+      \ get(g:, 'requirements#detect_filename_pattern', '')
 
-let &cpo = s:save_cpo
-unlet s:save_cpo
-" vim: et sw=4 ts=4 sts=4:
+let s:unmatchable = '\w\b\w'
+
+function! requirements#is_requirements_file()
+  let l:filename = expand("%:p")
+  return requirements#matched_filename(l:filename)
+endfunction
+
+function! requirements#matched_filename(filename)
+  let l:pattern = get(g:, 'requirements#detect_filename_pattern', s:unmatchable)
+  if a:filename =~# '\v.*require(ment)?s\.(txt|in)$'
+    return 1
+  elseif a:filename =~# '\vrequire(ment)?s/.*\.(txt|in)$'
+    return 1
+  elseif a:filename =~# '\vconstraints\.(txt|in)$'
+    return 1
+  elseif a:filename =~# l:pattern
+    return 1
+  endif
+  return 0
+endfunction
