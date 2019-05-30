@@ -1,11 +1,6 @@
 requirements.txt.vim
 ====================
 
-[![Build Status](https://travis-ci.org/raimon49/requirements.txt.vim.svg?branch=master)](https://travis-ci.org/raimon49/requirements.txt.vim)
-[![GitHub Release](https://img.shields.io/github/release/raimon49/requirements.txt.vim.svg)](https://github.com/raimon49/requirements.txt.vim/releases)
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.txt)
-[![Known Vulnerabilities](https://snyk.io/test/github/raimon49/requirements.txt.vim/badge.svg)](https://snyk.io/test/github/raimon49/requirements.txt.vim)
-
 [the Requirements File Format](http://pip.readthedocs.org/en/stable/reference/pip_install/#requirements-file-format) syntax support for Vim.
 
 ![requirements txt-sc](https://cloud.githubusercontent.com/assets/221802/11379923/5cbb4862-9336-11e5-8963-217b2d7df397.png)
@@ -26,7 +21,7 @@ Installation
 
 ### Plugin manager (**recommended**)
 
-e.g.) [vim-plug](https://github.com/junegunn/vim-plug), [dein.vim](https://github.com/Shougo/dein.vim), [NeoBundle](https://github.com/Shougo/neobundle.vim), [Vundle](https://github.com/VundleVim/Vundle.vim) [and more](https://dotfiles.github.io/)
+e.g. [vim-plug](https://github.com/junegunn/vim-plug), [dein.vim](https://github.com/Shougo/dein.vim), [NeoBundle](https://github.com/Shougo/neobundle.vim), [Vundle](https://github.com/VundleVim/Vundle.vim) [and more](https://dotfiles.github.io/)
 
 ```vim
 " vim-plug
