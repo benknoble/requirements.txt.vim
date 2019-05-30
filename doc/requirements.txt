@@ -1,0 +1,52 @@
+*requirements.txt*       For Vim version 8          Last change: 2019 May 30
+*requirements* *vim-requirements*
+
+requirements.txt.vim is a vim plugin that contains
+
+    - filetype detection and syntax highlighting for requirements files
+
+Install it with your favorite plugin manager.
+
+You can add to the patterns detected via *g:requirements#is_requirements_file*
+
+==============================================================================
+LICENSE                                                   *requirements-license*
+
+MIT License. Copyright © 2015 raimon
+
+Full text available at
+https://github.com/benknoble/requirements.txt.vim/blob/master/LICENSE.txt
+
+==============================================================================
+BUGS                                                         *requirements-bugs*
+
+At the time of this writing, no major bugs have been found.
+
+If you find one and wish to report it, you can do so at
+https://github.com/benknoble/requirements.txt.vim/issues
+
+==============================================================================
+CONTRIBUTING                                         *requirements-contributing*
+
+Want to submit a new feature, bugfix, or hack on requirements?
+Submit pull requests to
+https://github.com/benknoble/requirements.txt.vim/pulls
+
+Existing code determines style guidelines.
+
+==============================================================================
+CREDITS                                                   *requirements-credits*
+
+Maintained by:
+- D. Ben Knoble ( https://github.com/benknoble )
+
+Git repository:
+https://github.com/benknoble/requirements.txt.vim
+
+==============================================================================
+CHANGELOG                                               *requirements-changelog*
+
+*v2.0.0*                                                             2019 May 30
+  * Initial release by D. Ben Knoble
+
+ vim:tw=78:ts=8:ft=help:norl:
