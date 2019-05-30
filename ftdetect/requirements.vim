@@ -5,6 +5,6 @@
 
 au BufNewFile,BufRead *.{txt,in}
       \ if requirements#is_requirements_file() |
-      \   setfiletype requirements |
+      \   set filetype=requirements |
       \ endif
 au BufNewFile,BufRead *.pip setfiletype requirements
