@@ -3,9 +3,6 @@
 " Author:  raimon <raimon49@hotmail.com>
 " Modifications: benknoble <ben.knoble@gmail.com>
 
-let g:requirements#detect_filename_pattern =
-      \ get(g:, 'requirements#detect_filename_pattern', '')
-
 let s:unmatchable = '\w\b\w'
 
 function! requirements#is_requirements_file()
