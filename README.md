@@ -25,28 +25,28 @@ e.g. [vim-plug](https://github.com/junegunn/vim-plug), [dein.vim](https://github
 
 ```vim
 " vim-plug
-Plug 'raimon49/requirements.txt.vim'
+Plug 'benknoble/requirements.txt.vim'
 
 " vim-plug with on-demand
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+Plug 'benknoble/requirements.txt.vim', {'for': 'requirements'}
 
 " dein.vim
-call dein#add('raimon49/requirements.txt.vim')
+call dein#add('benknoble/requirements.txt.vim')
 
 " dein.vim with lazy
-call dein#add('raimon49/requirements.txt.vim', {'lazy': 1, 'on_ft': 'requirements'})
+call dein#add('benknoble/requirements.txt.vim', {'lazy': 1, 'on_ft': 'requirements'})
 
 " NeoBundle
-NeoBundle 'raimon49/requirements.txt.vim'
+NeoBundle 'benknoble/requirements.txt.vim'
 
 " Vundle
-Plugin 'raimon49/requirements.txt.vim'
+Plugin 'benknoble/requirements.txt.vim'
 ```
 
 ### Pathogen (https://github.com/tpope/vim-pathogen)
 
 ```sh
-$ git clone https://github.com/raimon49/requirements.txt.vim.git ~/.vim/bundle/requirements.txt.vim
+$ git clone https://github.com/benknoble/requirements.txt.vim.git ~/.vim/bundle/requirements.txt.vim
 ```
 
 ### Manually
