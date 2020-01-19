@@ -16,7 +16,7 @@ syn match requirementsPackageName "\v^([[:alnum:]][[:alnum:]\-_\.]*[[:alnum:]])"
 syn match requirementsExtras "\v\[\S+\]"
 syn match requirementsVersionControls "\v(git\+?|hg\+|svn\+|bzr\+)\S+"
 syn match requirementsURLs "\v(\@\s)?(https?|ftp|gopher)://?[^\s/$.?#].\S*"
-syn match requirementsEnvironmentMarkers "\v;\s.+$"
+syn match requirementsEnvironmentMarkers "\v;\s[^#]+"
 
 hi link requirementsComment Comment
 hi link requirementsCommandOption Special
