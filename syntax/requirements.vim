@@ -21,7 +21,7 @@ syn match requirementsCommandOption "\v^\[?--?[[:alpha:]\-]*\]?"
 syn match requirementsVersionSpecifiers "\v(\=\=\=?|\<\=?|\>\=?|\~\=|\!\=)"
 syn match requirementsPackageName "\v^([[:alnum:]][[:alnum:]\-_\.]*[[:alnum:]])"
 syn match requirementsExtras "\v\[\S+\]"
-syn match requirementsVersionControls "\v(git\+|hg\+|svn\+|bzr\+)\S+"
+syn match requirementsVersionControls "\v(git\+?|hg\+|svn\+|bzr\+).*://.\S+"
 syn match requirementsURLs "\v(\@\s)?(https?|ftp|gopher)://?[^\s/$.?#].\S*"
 syn match requirementsEnvironmentMarkers "\v;\s[^#]+" contains=requirementsKeyword,requirementsVersionSpecifiers,requirementsString
 
