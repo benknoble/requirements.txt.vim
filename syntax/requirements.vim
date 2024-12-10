@@ -16,7 +16,7 @@ syn region requirementsSubst matchgroup=requirementsSubstDelim start="\V${" end=
 syn region requirementsString matchgroup=requirementsStringDelim start=`'` skip=`\\'` end=`'`
 syn region requirementsString matchgroup=requirementsStringDelim start=`"` skip=`\\"` end=`"`
 syn match requirementsVersion "\v\d+[[:alnum:]\.\-\*]*"
-syn region requirementsComment start="[ \t]*#" end="$"
+syn region requirementsComment start="\v(^|[ \t])#" end="$"
 syn match requirementsCommandOption "\v^\[?--?[[:alpha:]\-]*\]?"
 syn match requirementsVersionSpecifiers "\v(\=\=\=?|\<\=?|\>\=?|\~\=|\!\=)"
 syn match requirementsPackageName "\v^([[:alnum:]][[:alnum:]\-_\.]*[[:alnum:]])"
