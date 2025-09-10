@@ -19,7 +19,9 @@ Table of Contents
     * [Manually](#manually)
 * [File detection](#file-detection)
     * [Customize](#customize)
+    * [Support for make](#support-for-make)
 * [License](#license)
+* [Similar Projects](#similar-projects)
 
 Installation
 ------------
@@ -87,7 +89,22 @@ $ pip freeze > my-freeze.txt
 $ vim my-freeze.txt
 ```
 
+### Support for make
+
+When the `pip-compile` command is detected, make will behave more intelligently while editing the `requirements.in` file.
+
+You can get support with the following commands:
+
+* `:make`
+* `:make -U`
+
 License
 -------
 
 [MIT License](LICENSE.txt)
+
+Similar Projects
+----------------
+
+* [bat: A cat(1) clone with wings.](https://github.com/sharkdp/bat)
+    * Beautiful syntax highlighting of requirements file is supported

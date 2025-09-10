@@ -8,3 +8,4 @@ au BufNewFile,BufRead *.{txt,in}
       \   set filetype=requirements |
       \ endif
 au BufNewFile,BufRead *.pip setfiletype requirements
+au BufNewFile,BufRead * if !did_filetype() | call requirements#shebang() | endif
